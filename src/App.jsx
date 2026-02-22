@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./index.css";
 
@@ -11,16 +11,14 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={<Home isLoaded={isLoaded} setIsLoaded={setIsLoaded} />}
-        />
-        <Route path="/imprint" element={<Imprint />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route
+        path="/"
+        element={<Home isLoaded={isLoaded} setIsLoaded={setIsLoaded} />}
+      />
+      <Route path="/imprint" element={<Imprint />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+    </Routes>
   );
 }
 
