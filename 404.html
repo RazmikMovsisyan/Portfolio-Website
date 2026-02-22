@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Razmik | Portfolio</title>
+    <meta charset="utf-8">
+    <title>Razmik Portfolio</title>
     <script>
-      // Die einzige Aufgabe: Den Pfad speichern und zu index.html weiterleiten
-      sessionStorage.setItem('redirect', window.location.pathname);
-      window.location.replace('/');
+      sessionStorage.redirect = location.pathname;
+      window.location.href = '/';
     </script>
   </head>
-  <body>
-    <p>Redirecting...</p>
-  </body>
+  <body></body>
 </html>
