@@ -5,7 +5,7 @@ export const PERSONAL_INFO = {
   location: 'Bochum, Germany',
   phone: '+49 163 9701860',
   tagline: 'Crafting seamless digital experiences with code and creativity.',
-  resume: '/resume-and-diploma.pdf',
+  resume: '/resume-diploma.pdf',
   bio: [
     "First steps in the age of 14.",
     "Passionated about building modern web applications with cutting-edge technologies. Eager to contribute to innovative projects and grow as a developer.",
